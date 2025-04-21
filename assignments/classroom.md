@@ -33,7 +33,7 @@ The following steps are to be performed **only once** during the entire semester
 
 7. To be able to receive assignments, you will have to add a second git remote:
   ```bash
-  git remote add assignments https://github.com/DBatUTuebingen/⟨lecture⟩.git
+  git remote add assignments https://github.com/DBatUTuebingen-Teaching/⟨lecture⟩.git
   ```
   This will allow you to pull the assignments from the main repository. You can do this by running:
   ```bash
