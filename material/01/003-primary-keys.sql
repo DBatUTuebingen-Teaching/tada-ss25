@@ -128,6 +128,8 @@ INSERT INTO t2(a,b,c) VALUES
   (1,  true, 'one'),
   (2, false, 'one');
 
+DESCRIBE t2;
+
 -- (3)
 -- Table t3 contains two duplicate rows (1, true, 'three'): no key will
 -- ever be able to distinguish between those.

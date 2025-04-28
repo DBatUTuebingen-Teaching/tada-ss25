@@ -17,7 +17,8 @@ FROM beats;
 -- Type text is OK but admits a virtually limitless set of values
 -- that do not correspond to a valid move :-/
 
--- ⚠️ OK regarding types and constraints but questionable in the RPS domain
+-- ⚠️ OK regarding types and constraints but questionable in the
+--    Rock-Paper-Scissors game domain
 INSERT INTO beats(lose, win) VALUES
   ('rock',     'paper'),   -- moves encoded wrong
   ('straight', 'flush');   -- oops, poker (change of domain)
@@ -51,11 +52,11 @@ FROM beats;
 
 ------------------------------------------------------------------------
 
--- Create a new type rps with a custom domain that exactly fits our use
--- case: explicitly enumerate the (few) values of type rps.
+-- Create a new type named rps with a custom domain that exactly fits
+-- our use case: explicitly enumerate the (few) values of type rps.
 --
--- Need new rps literals, enclose these in single quotes '...' (these
--- are NOT strings).
+-- We need new rps literals, enclose these in single quotes '...'
+-- (these are NOT strings).
 
 DROP TYPE IF EXISTS rps;
 CREATE TYPE rps AS ENUM ('', '', '');  -- size of value domain: 3

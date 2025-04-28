@@ -100,7 +100,7 @@ WHERE pid = 4; -- who is the prolific driver with ID 4?
 -- ⚠️ This will fail since it violates the foreign key constraint
 --     (no peep with ID 5)
 INSERT INTO vehicles(vehicle, kind, seats, "wheels?", driver) VALUES
-  ('󱂆', 'scooter', 1, true, 5),
+  ('󱂆', 'scooter', 1, true, 5);
 --                           🡑
 --                      5 ∊̷ peeps(pid)
 
@@ -129,5 +129,5 @@ CREATE OR REPLACE TABLE vehicles (
 --
 -- But: a foreign key CAN BE candidate for a key in its own table.
 --
--- Q: In the vehicles/peeps application, what are the consequences for
---    the domain if foreign key driver also is a key candidate?
+-- QUIZ: In the vehicles/peeps application, what are the consequences for
+--       the domain if foreign key driver also is a key candidate?

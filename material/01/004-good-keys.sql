@@ -61,7 +61,7 @@ WHERE seats = 1;  -- woops, now two rows pass
 -- FROM  ‹t›
 -- WHERE ‹key› = ‹value›
 --
--- will always return at most one row.
+-- will ALWAYS return at most one row.
 
 ------------------------------------------------------------------------
 
@@ -101,11 +101,11 @@ WHERE vehicle = '󰞞' AND kind = 'bus';
 --
 -- SQL syntax:
 --
--- CREATE SEQUENCE ‹s›  -- minimal value 1, maximal value ∞ (actually bigint limits),
+-- CREATE SEQUENCE ‹s›  -- minimal value 1, maximal value ∞ (practice: bigint limits),
 --                         start with 1, increment by 1, no cycling
 -- CREATE SEQUENCE ‹s› START WITH ‹a›
 -- CREATE SEQUENCE ‹s› START WITH ‹a› INCREMENT BY ‹i›
--- CREATE SEQUENCE ‹s› MINVALUE ‹m› MAXVALUE ‹M› START WITH ‹a› INCREMENT BY ‹i› CYCLE
+-- CREATE SEQUENCE ‹s› MINVALUE ‹m› MAXVALUE ‹M› START WITH ‹a› INCREMENT BY ‹i›
 -- CREATE SEQUENCE ‹s› MINVALUE ‹m› MAXVALUE ‹M› START WITH ‹a› INCREMENT BY ‹i› CYCLE
 --
 -- Access next / current value in sequence ‹s› via nextval('‹s›') / currval('‹s›').
