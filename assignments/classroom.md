@@ -37,7 +37,7 @@ The following steps are to be performed **only once** during the entire semester
   ```
   This will allow you to pull the assignments from the main repository. You can do this by running:
   ```bash
-  git pull assignments master
+  git pull assignments main
   ```
   This will fetch the latest assignments from the main repository and merge them into your local copy.
 
