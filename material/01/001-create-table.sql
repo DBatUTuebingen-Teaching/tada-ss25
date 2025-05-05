@@ -1,5 +1,18 @@
 -- 001-create-table.sql
 
+-- A note on fonts:
+--
+-- In some of our sample tables we are using Unicode character
+-- symbols (e.g., 󱔭󰞞󰟺󰍼󰴺󰞧) to depict vehicles and other objects.
+-- These symbols are not essential and you could easily replace the
+-- symbol for a car by the text string 'car' in these tables, for example.
+-- If you do want to see these symbols on your system, however, simply
+-- install and use a font containing the required characters.  You can
+-- find a variety of such free fonts on the Web at
+--
+--              https://www.nerdfonts.com/font-downloads
+
+
 -- SQL syntax:
 
 -- In SQL, text after a double dash is a comment.
@@ -25,7 +38,7 @@ CREATE OR REPLACE TABLE vehicles (
   vehicle   text    NOT NULL,  -- no NULL values allowed in column vehicle
   kind      text    NOT NULL,
   seats     int             ,  -- NULL values OK in column seats
-  "wheels?" boolean            -- enclose column names in "..." if it contains
+  "wheels?" boolean NOT NULL   -- enclose column names in "..." if it contains
 );                             -- non-alphanumeric characters or SQL tokens
 
 /* CREATE OR REPLACE t (...) will create table t if non-existent,
