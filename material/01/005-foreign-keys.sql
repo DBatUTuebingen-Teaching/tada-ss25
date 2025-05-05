@@ -65,7 +65,7 @@ ORDER BY year(today()) - born < 18, born DESC;
 -- Constraint REFERENCES ‹t›(‹c›) restricts the values of its column
 -- to be from the contents of column ‹c› in foreign table ‹t›.  Since
 -- we want  to uniquely identify drivers, ‹c› must be the PRIMARY KEY
--- or UNIQUEin foregin table ‹t›.
+-- or UNIQUE in foregin table ‹t›.
 
 CREATE OR REPLACE TABLE vehicles (
   vehicle   text    PRIMARY KEY,

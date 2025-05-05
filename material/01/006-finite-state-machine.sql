@@ -79,7 +79,9 @@ CREATE OR REPLACE TABLE transitions (
   "from" int  NOT NULL REFERENCES states(state),  -- origin state
   "to"   int  NOT NULL REFERENCES states(state),  -- target state
   label  text NOT NULL,                           -- input character
-  PRIMARY KEY ("from", "to", label)  -- ⚠️ (from,to) is not a key anymore
+  PRIMARY KEY ("from", label)  -- ⚠️ (from,to) is not a key anymore but
+                               --     (from,label) is unique: this is a
+                               --     DETERMINISTIC finite state machine
 );
 
 INSERT INTO transitions("from", "to", label) VALUES
