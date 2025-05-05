@@ -5,7 +5,7 @@
 --   that column seats is detected to contain integers, column "wheels?"
 --   to contain boolean values.
 -- - All columns (except vehicle) appears to contain spurious leading space ' '.
--- - In the 'tank' row,.space ' ' not detected as NULL value
+-- - In the 'tank' row, ' ' not detected as NULL value
 FROM read_csv('vehicles.csv');
 
 -- Read vehicles CSV file, specify delimiter ', ' (space comma) explicitly
@@ -55,8 +55,8 @@ FROM read_csv('lineitem.csv',
               names = ['l_orderkey', 'l_partkey', 'l_suppkey', 'l_linenumber', 'l_quantity',
                        'l_extendedprice', 'l_discount', 'l_tax', 'l_returnflag',
                        'l_linestatus', 'l_shipdate', 'l_commitdate', 'l_receiptdate',
-                       'l_shipinstruct', 'l_shipmode', 'l_comment']);
-
+                       'l_shipinstruct', 'l_shipmode', 'l_comment'])
+LIMIT 20;
 ------------------------------------------------------------------------
 
 -- SQL syntax:

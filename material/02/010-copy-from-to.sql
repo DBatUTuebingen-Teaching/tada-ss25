@@ -14,7 +14,7 @@ CREATE OR REPLACE TABLE vehicles (
 COPY vehicles
 FROM 'vehicles.csv' (delim ', ', nullstr ' ');
 -- Check that the CSV data has been imported as expected
-SELECT * FROM vehicles;
+FROM vehicles;
 
 -- Query vehicles
 SELECT vehicle, kind, bar(seats,0,50,30) AS capacity
@@ -29,7 +29,7 @@ COPY (SELECT  vehicle, kind, bar(seats,0,50,30) AS capacity
       ORDER BY seats DESC)
 TO   'capacity.tsv' (header false, delim '\t');
 
-/* In you shell, print the contents of capacity.tsv to find:
+/* In your shell, print the contents of capacity.tsv to find:
 
 󰞞      bus     █████████████████████████▏
 󰟺      bus     ████▏
