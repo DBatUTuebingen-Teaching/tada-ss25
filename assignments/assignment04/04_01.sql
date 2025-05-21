@@ -1,0 +1,78 @@
+--------------------------------------------------------------------------------
+-- Tabular Database Systems
+-- Assignment 04
+-- Exercise 01
+--------------------------------------------------------------------------------
+-- In the lecture (slides TaDa-03.pdf), we have explored how DBMSs use
+-- modern computer architectures to speed up query processing. In this exercise,
+-- we will follow the path of the lecture and apply the concepts to a
+-- simplified version of the TPC-H benchmark.
+--
+-- In the lecture, we have used the TPC-H table `lineitem` to illustrate how
+-- a simple query "sum the quantity integer values in the 5th column" can be
+-- implemented in awk, Python, C, and SQL.
+--
+-- Note: The 5th column only contains values ≥ 0.
+--
+-- In this exercise, we will do the same, but we will use the following
+-- query: "Compute the minimum integer value in the 5th column — consider only
+--         rows whose integer value in the first column is less than 2000000".
+--
+-- Please download the TPC-H table `lineitem` from the following URL:
+-- https://db.cs.uni-tuebingen.de/staticfiles/lineitem.csv
+--------------------------------------------------------------------------------
+-- Task (a)
+--------------------------------------------------------------------------------
+-- Use awk to implement the query. See file #012 of the lecture for an
+-- example of how to use awk to implement a query.
+--
+-- Hint: Define a variable `min` in BEGIN to store the minimum value.
+-- You may initialize it with an empty string "", and then use the
+-- following logic to update it:
+-- (min < x) ? min : x
+--------------------------------------------------------------------------------
+-- Solution:
+-- Please hand in a file query.awk that contains the solution.
+--------------------------------------------------------------------------------
+-- Task (b)
+--------------------------------------------------------------------------------
+-- Use Python to implement the query. See file #013 of the lecture for an
+-- example of how to use Python to implement a query.
+--------------------------------------------------------------------------------
+-- Solution:
+-- Please hand in a file query.py that contains the solution.
+--------------------------------------------------------------------------------
+-- Task (c)
+--------------------------------------------------------------------------------
+-- Use C to implement the query—do not use mmap, or threads, for now.
+-- See file #014 of the lecture for an example.
+--------------------------------------------------------------------------------
+-- Solution:
+-- Please hand in a file query.c that contains the solution.
+--------------------------------------------------------------------------------
+-- Task (d)
+--------------------------------------------------------------------------------
+-- Use C to implement the query—use mmap.
+-- See file #015 of the lecture for an example.
+-- Note: You can use the same code as in (c) and just add mmap.
+--------------------------------------------------------------------------------
+-- Solution:
+-- Please hand in a file query_mmap.c that contains the solution.
+--------------------------------------------------------------------------------
+-- Task (e)
+--------------------------------------------------------------------------------
+-- Use SQL to implement the query.
+-- Hint: You will learn about the SQL dialect in the next lecture.
+--------------------------------------------------------------------------------
+-- Solution:
+
+--------------------------------------------------------------------------------
+-- Task (f)
+--------------------------------------------------------------------------------
+-- Please measure the execution time of your implementations in (a) to (e).
+-- Use the following command to measure the execution time of your implementations:
+--   time <your_command>
+--------------------------------------------------------------------------------
+-- Solution:
+
+--------------------------------------------------------------------------------
