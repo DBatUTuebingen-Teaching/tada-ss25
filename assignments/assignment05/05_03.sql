@@ -20,7 +20,7 @@
 -- (available at https://db.cs.uni-tuebingen.de/staticfiles/lineitem.csv)
 -- and check whether the TPC-H data generator has created a lineitem table
 -- that satisifes the above constraint.
--- The program runs sloooowly, however.  Indeed, there are A LOT of
+-- The program runs sloooow, however.  Indeed, there are A LOT of
 -- details in the program that could be optimized.
 --------------------------------------------------------------------------------
 -- Task (a)
