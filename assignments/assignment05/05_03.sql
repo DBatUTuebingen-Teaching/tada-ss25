@@ -37,3 +37,12 @@
 -- execute the programs on your computer.
 
 --------------------------------------------------------------------------------
+-- Task (b)
+--------------------------------------------------------------------------------
+-- Formulate a SQL query over file lineitem.csv that outputs the NUMBER
+-- OF ROWS that violate  the above TPC-H constraint.  (If the data was
+-- generated OK, the output of this query thus should be 0.)
+--------------------------------------------------------------------------------
+-- Solution:
+
+--------------------------------------------------------------------------------
