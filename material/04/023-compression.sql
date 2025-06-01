@@ -127,9 +127,10 @@ LIMIT 20;
 -- - column "const" uses a mere of 12 bytes(!) for 180K values
 -- - column "rle" uses 744 bytes only
 -- - columns "bitpack", "for", "dict" use < 1 bytes per row
-FROM  duckdb_logs
-WHERE message LIKE 'FinalAnalyze%'
-AND   message NOT LIKE '%VALIDITY%';
+SELECT timestamp, type, message
+FROM   duckdb_logs
+WHERE  message LIKE 'FinalAnalyze%'
+AND    message NOT LIKE '%VALIDITY%';
 
 -- Built-in table function pragma_storage_info('‹t›')  reports details
 -- about DuckDB's internal storage for the table named ‹t›.

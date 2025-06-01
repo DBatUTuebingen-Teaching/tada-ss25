@@ -1,4 +1,5 @@
--- On-disk, DuckDB stor
+-- On-disk, DuckDB stores tables in a column-by-column as opposed
+-- to row-by-row fashion (columnar table storage).
 --
 
 CREATE OR REPLACE TABLE vehicles (
@@ -74,8 +75,8 @@ DESCRIBE lineitem;
 
 -- The 6+ million rows of table lineitem
 -- will need many row groups (of 120K rows each)
-SELECT COUNT(*)                         AS rows,
-       ceiling(COUNT(*) / (120 * 1024)) AS row_groups
+SELECT count(*)                         AS rows,
+       ceiling(count(*) / (120 * 1024)) AS row_groups
 FROM   lineitem;
 
 -- Storage of table lineitem:
