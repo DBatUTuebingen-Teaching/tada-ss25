@@ -1,0 +1,45 @@
+--------------------------------------------------------------------------------
+-- Tabular Database Systems
+-- Assignment 06
+-- Exercise 02
+--------------------------------------------------------------------------------
+-- We did learn about aggregation functions in the lecture and in this exercise
+-- we will use them to compute some statistics on the TPC-H table `lineitem`.
+-- Please use the DuckDB database file `lineitem.db` that you created in
+-- Assignment 06 Exercise 01.
+-- Please hand-in the SQL code that you used to compute the statistics.
+-- Note: https://duckdb.org/docs/stable/sql/functions/aggregates.html
+--------------------------------------------------------------------------------
+-- Task (a)
+--------------------------------------------------------------------------------
+-- Please compute the total number of rows in the table `lineitem`.
+--------------------------------------------------------------------------------
+-- Solution:
+
+--------------------------------------------------------------------------------
+-- Task (b)
+--------------------------------------------------------------------------------
+-- Please compute the total number of rows in the table `lineitem` where
+-- `l_shipdate` is before '1995-06-17' and `l_returnflag` is neither 'A' nor 'R'.
+--------------------------------------------------------------------------------
+-- Solution:
+
+--------------------------------------------------------------------------------
+-- Task (c)
+--------------------------------------------------------------------------------
+-- Please compute the minimum, maximum, and average `l_quantity` of all rows in
+-- the table `lineitem`. Use a single SQL query to compute all three statistics.
+--------------------------------------------------------------------------------
+-- Solution:
+
+--------------------------------------------------------------------------------
+-- Task (d)
+--------------------------------------------------------------------------------
+-- Please write a single SQL query that outputs two double values
+-- (between 0.0 and 100.0):
+-- - the percentage of rows for which l_linestatus is 'F' as well as
+-- - the percentage of rows for which l_linestatus is 'O'.
+--------------------------------------------------------------------------------
+-- Solution:
+
+--------------------------------------------------------------------------------
