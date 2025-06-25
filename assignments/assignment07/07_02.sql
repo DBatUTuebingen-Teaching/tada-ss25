@@ -9,11 +9,15 @@
 -- on the query performance of DuckDB.
 --
 -- Please create a database compressed.db with TPC-H data at scale factor
--- sf = 10. Note: This experiment requires about 15 GB of disk space.
+-- sf = 10. You can use DuckDB's tpch extension to obtain the required
+-- TPCH-H tables (including table lineitem).
+-- Note: This experiment requires about 15 GB of disk space.
 -- You can use the following commands to create the database
 -- and the table:
 ATTACH 'compressed.db';
 USE compressed;
+INSTALL tpch;
+LOAD tpch;
 CALL dbgen(sf = 10);
 
 -- Restart DuckDB to clear the memory cache.
