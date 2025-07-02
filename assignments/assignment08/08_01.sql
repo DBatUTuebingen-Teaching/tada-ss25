@@ -1,0 +1,100 @@
+--------------------------------------------------------------------------------
+-- Tabular Database Systems
+-- Assignment 08
+-- Exercise 01
+--------------------------------------------------------------------------------
+-- In the lecture, we learned a lot more about SQL, multi-table queries
+-- and joins in particular.   We will use this knowledge now to formulate
+-- more complex queries.
+--
+-- The file `beer.sql` contains the table schemata and states of a
+-- beer/bar database. It contains the following tables:
+-- - `Bars`: stores information about bars
+-- - `Beers`: stores information about different beers
+-- - `Drinkers`: stores information about customers
+-- - `Likes`: stores which drinkers like which beers
+-- - `Sells`: stores which bars sell which beers and their prices
+-- - `Frequents`: stores which drinkers visit which bars
+--
+-- For your conveniece, we have also prepared a DuckDB database file
+-- that contains these tables.
+--------------------------------------------------------------------------------
+-- Task (a)
+--------------------------------------------------------------------------------
+-- Write a query that returns the names of all bars that sell a beer with an
+-- alcohol content greater than 5.0. Please also return the name of the beer
+-- and its alcohol content. The result should be ordered by the name of the bar.
+--------------------------------------------------------------------------------
+-- Solution:
+
+--------------------------------------------------------------------------------
+-- Task (b)
+--------------------------------------------------------------------------------
+-- Write a query that returns the names of all drinkers who like beers with an
+-- alcohol content less or equal than 5.0. Please also return the name of the beer
+-- and its alcohol content. The result should be ordered by the name of the
+-- drinker.
+--------------------------------------------------------------------------------
+-- Solution:
+
+--------------------------------------------------------------------------------
+-- Task (c)
+--------------------------------------------------------------------------------
+-- Write a query that returns the names of all bars that sell beers with an
+-- alcohol content >= 5.0 and that are frequented by drinkers who like
+-- beers with an alcohol content less or equal than 5.0. Please also return the
+-- name of the beer and its alcohol content. The result should be ordered by the
+-- name of the bar.
+--------------------------------------------------------------------------------
+-- Solution:
+
+--------------------------------------------------------------------------------
+-- Task (d)
+--------------------------------------------------------------------------------
+-- Write a query that finds pairs of drinkers who like the same beer. Return the
+-- names of both drinkers and the name of the beer they both like. To avoid
+-- duplicate pairs, ensure the first drinker's name comes before the second
+-- drinker's name alphabetically. Order the results by the beer name.
+-- Note: This query requires a self-join on the `Drinkers` and `Likes` tables.
+--------------------------------------------------------------------------------
+-- Solution:
+
+--------------------------------------------------------------------------------
+-- Task (e)
+--------------------------------------------------------------------------------
+-- Write a query that finds all bars that have no drinkers frequenting them
+-- using an anti join. Return the bar names ordered alphabetically.
+-- Note: This query uses DuckDB's explicit ANTI JOIN syntax.
+--------------------------------------------------------------------------------
+-- Solution:
+
+--------------------------------------------------------------------------------
+-- Task (f)
+--------------------------------------------------------------------------------
+-- Write a query that lists all beers and the bars that sell them, including
+-- beers that aren't sold anywhere. Return the beer name, its alcohol content,
+-- and the bar name. Order the results by beer name and bar name.
+-- Note: This query requires a LEFT JOIN.
+--------------------------------------------------------------------------------
+-- Solution:
+
+--------------------------------------------------------------------------------
+-- Task (g)
+--------------------------------------------------------------------------------
+-- Write a query that lists all bars and beers combinations - both the bars that
+-- sell beers and beers that aren't sold, alongside bars that don't sell any
+-- beers. Return the bar name and beer name, ordered by bar name and beer name.
+-- Note: This query requires a FULL OUTER JOIN.
+--------------------------------------------------------------------------------
+-- Solution:
+
+--------------------------------------------------------------------------------
+-- Task (h)
+--------------------------------------------------------------------------------
+-- Write a query that returns the name and age of those drinkers that
+-- like (any) beer of type Ale.  Important: List each drinker only once.
+-- Note: Do NOT use DISTINCT—instead rely on SEMI JOIN.
+--------------------------------------------------------------------------------
+-- Solution:
+
+--------------------------------------------------------------------------------
