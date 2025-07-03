@@ -35,7 +35,6 @@
 -- At the bottom of your program include a Python comment that gives
 -- the run time for both constraint.py and fast-constraint.py when you
 -- execute the programs on your computer.
-
 --------------------------------------------------------------------------------
 -- Task (b)
 --------------------------------------------------------------------------------

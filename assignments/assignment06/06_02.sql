@@ -35,7 +35,7 @@
 --------------------------------------------------------------------------------
 -- Task (d)
 --------------------------------------------------------------------------------
--- Please write a single SQL query that outputs two double values
+-- Please formulate a single SQL query that outputs two double values
 -- (between 0.0 and 100.0):
 -- - the percentage of rows for which l_linestatus is 'F' as well as
 -- - the percentage of rows for which l_linestatus is 'O'.

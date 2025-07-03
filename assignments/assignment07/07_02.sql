@@ -21,6 +21,7 @@ LOAD tpch;
 CALL dbgen(sf = 10);
 
 -- Restart DuckDB to clear the memory cache.
+-- Attach to database compressed.db again.
 
 -- Then, run the following query 3 times and report the execution times
 -- (use .timer on in DuckDB's CLI to measure the execution time of the query):
@@ -46,6 +47,7 @@ PRAGMA force_compression = 'Uncompressed';
 COPY FROM DATABASE compressed TO uncompressed;
 
 -- Restart DuckDB to clear the memory cache.
+-- Attach to database uncompressed.db again.
 
 -- Then, run the same query 3 times and report the execution times.
 --
