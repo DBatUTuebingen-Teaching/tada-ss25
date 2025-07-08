@@ -1,0 +1,6 @@
+Due to its size (~175 MB), we do not host the DuckDB file
+for the Dutch railway network (041-railway.db) on GitHub.
+
+You can download the database file here:
+
+https://db.cs.uni-tuebingen.de/staticfiles/041-railway.db
