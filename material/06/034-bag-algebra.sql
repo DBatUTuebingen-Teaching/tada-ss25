@@ -44,7 +44,7 @@ FROM peeps;
 --
 SELECT v.vehicle AS icon    -- the lhs query determines the column name
 FROM   vehicles AS v
-  UNION
+  UNION ALL
 SELECT p.pic /* AS icon */
 FROM   peeps AS p;
 
@@ -65,14 +65,6 @@ WHERE p.name > 'Fred'
   UNION ALL
 FROM  peeps AS p
 WHERE p.name <= 'Fred'; -- ≡ NOT p.name > 'Fred'
-
-
--- This DOES NOT return table peeps again. (Why?)
-FROM  peeps AS p
-WHERE p.born > 2000
-  UNION ALL
-FROM  peeps AS p
-WHERE p.born > 2010;
 
 
 -- This DOES NOT return table peeps again. (Why?)
