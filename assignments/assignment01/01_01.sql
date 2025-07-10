@@ -16,7 +16,7 @@
 -- └────────┴────────────┴────────────┴────────────┴────────────┘
 
 --------------------------------------------------------------------------------
--- Task (a)
+-- Task (a) — [E]
 --------------------------------------------------------------------------------
 -- Write the SQL DDL statement to create the table customers. Use
 -- appropriate data types for each column and add constraints to ensure
@@ -27,7 +27,7 @@
 -- Solution:
 
 --------------------------------------------------------------------------------
--- Task (b)
+-- Task (b) — [E]
 --------------------------------------------------------------------------------
 -- Write the SQL DML statement to insert the data shown in the
 -- output into the customers table. Ensure that the data types match
@@ -38,7 +38,7 @@
 -- Solution:
 
 --------------------------------------------------------------------------------
--- Task (c)
+-- Task (c) — [E]
 --------------------------------------------------------------------------------
 -- Write the SQL DML statement to update the email of the customer
 -- with id 3 to "alice@johnson" and the phone number to "5551234567".
@@ -50,7 +50,7 @@
 -- Solution:
 
 --------------------------------------------------------------------------------
--- Task (d)
+-- Task (d) — [E]
 --------------------------------------------------------------------------------
 -- Write the SQL DML statement to delete the customer with id 4
 -- from the customers table. Ensure that the deletion is successful.
@@ -59,7 +59,7 @@
 -- Solution:
 
 --------------------------------------------------------------------------------
--- Task (e)
+-- Task (e) — [E]
 --------------------------------------------------------------------------------
 -- Write a SQL query to select all customers from the customers
 -- table where the first name starts with "J". You can use the LIKE operator

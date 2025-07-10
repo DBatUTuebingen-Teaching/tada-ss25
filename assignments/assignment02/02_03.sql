@@ -38,7 +38,7 @@ INSERT INTO edges (source, target) VALUES
 -- 3 → 4 → 5
 
 --------------------------------------------------------------------------------
--- Task (a)
+-- Task (a) — [E]
 --------------------------------------------------------------------------------
 -- Why would it be a bad idea to use a single table to store the graph? What are
 -- the advantages of using two tables?
@@ -51,7 +51,7 @@ INSERT INTO edges (source, target) VALUES
 -- Solution:
 
 --------------------------------------------------------------------------------
--- Task (b)
+-- Task (b) — [E]
 --------------------------------------------------------------------------------
 -- We want to delete the node with id 3 from the graph, without
 -- deleting nodes 4 and 5. This will effectively split the graph into two
@@ -63,7 +63,7 @@ INSERT INTO edges (source, target) VALUES
 -- Solution:
 
 --------------------------------------------------------------------------------
--- Task (c)
+-- Task (c) — [E]
 --------------------------------------------------------------------------------
 -- Write the SQL DML statement to add a new node with id 6 to the graph.
 -- Please add edges from node 1 to node 6 and from node 6 to node 5.
@@ -72,7 +72,7 @@ INSERT INTO edges (source, target) VALUES
 -- Solution:
 
 --------------------------------------------------------------------------------
--- Task (d)
+-- Task (d) — [E]
 --------------------------------------------------------------------------------
 -- The graph is now cyclic. Please explain why this is not a problem in the
 -- context of the graph representation we are using.
@@ -80,7 +80,7 @@ INSERT INTO edges (source, target) VALUES
 -- Solution:
 
 --------------------------------------------------------------------------------
--- Task (e)
+-- Task (e) — [E]
 --------------------------------------------------------------------------------
 -- We now need to add text labels to the edges of the graph.
 -- Propose a design for a new table labels that holds such edge labels.

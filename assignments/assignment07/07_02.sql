@@ -3,7 +3,7 @@
 -- Assignment 07
 -- Exercise 02
 --------------------------------------------------------------------------------
--- Task (a)
+-- Task (a) — [E]
 --------------------------------------------------------------------------------
 -- In this exercise, we will try to explore the effect of compression
 -- on the query performance of DuckDB.

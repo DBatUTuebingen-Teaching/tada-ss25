@@ -33,7 +33,7 @@ INSERT INTO customers (id, first_name, last_name, email, phone) VALUES
 -- value of the current date. The `total_amount` column should not allow null values.
 
 --------------------------------------------------------------------------------
--- Task (a)
+-- Task (a) — [E]
 --------------------------------------------------------------------------------
 -- Write the SQL DDL statement to create the `orders` table with the specified
 -- columns and constraints. Use appropriate data types for each column.
@@ -42,7 +42,7 @@ INSERT INTO customers (id, first_name, last_name, email, phone) VALUES
 -- Solution:
 
 --------------------------------------------------------------------------------
--- Task (b)
+-- Task (b) — [E]
 --------------------------------------------------------------------------------
 -- Query `FROM orders;` returns the following output:
 -- ┌──────────┬─────────────┬────────────┬──────────────┐
@@ -62,7 +62,7 @@ INSERT INTO customers (id, first_name, last_name, email, phone) VALUES
 -- Solution:
 
 --------------------------------------------------------------------------------
--- Task (c)
+-- Task (c) — [E]
 --------------------------------------------------------------------------------
 -- Alice Johnson wants all her data to be deleted from the database.
 -- However, the following error occurs when you try to delete her data from the
@@ -78,7 +78,7 @@ INSERT INTO customers (id, first_name, last_name, email, phone) VALUES
 -- Solution:
 
 --------------------------------------------------------------------------------
--- Task (d)
+-- Task (d) — [E]
 --------------------------------------------------------------------------------
 -- Bob Brown calls you and claims that his order with order_id 6
 -- arrived damaged. He wants to keep the order but wants a refund of 50% of the

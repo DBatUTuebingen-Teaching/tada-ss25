@@ -42,7 +42,7 @@
 -- └────────┴──────────┴──────────┘
 
 --------------------------------------------------------------------------------
--- Task (a)
+-- Task (a) — [E]
 --------------------------------------------------------------------------------
 -- For each of the three variants, write down the SQL DDL statements to
 -- create the table and the SQL DML statements to insert the data. You can
@@ -61,7 +61,7 @@
 -- CREATE TABLE CHART3 ( ⟨your solution⟩ );
 
 --------------------------------------------------------------------------------
--- Task (b)
+-- Task (b) — [E]
 --------------------------------------------------------------------------------
 -- Explain what changes to the schema and/or instance are needed for every
 -- table, if we want to:
@@ -74,7 +74,7 @@
 -- Solution:
 
 --------------------------------------------------------------------------------
--- Task (c)
+-- Task (c) — [E]
 --------------------------------------------------------------------------------
 -- Specify INSERT, UPDATE, and DELETE statements for those tables in task
 -- i. to iii. that only need their instance changed.
@@ -90,7 +90,7 @@
 -- Solution:
 
 --------------------------------------------------------------------------------
--- Task (d)
+-- Task (d) — [E]
 --------------------------------------------------------------------------------
 -- In the relational model, relation schemas are assumed to be stable while
 -- instances change frequently. Given this, which relation is the best choice to

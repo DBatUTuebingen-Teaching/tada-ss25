@@ -20,7 +20,7 @@
 -- - Queries Q1 and Q2 exclusively use SQL constructs that we have
 --   discussed in TaDa so far.
 --------------------------------------------------------------------------------
--- Task (a)
+-- Task (a) — [E]
 --------------------------------------------------------------------------------
 -- Please reconstruct the SQL query Q1 such that EXPLAIN ANALYZE Q1
 -- leads to the following plan:
@@ -74,7 +74,7 @@
 -- Solution:
 
 --------------------------------------------------------------------------------
--- Task (b)
+-- Task (b) — [E]
 --------------------------------------------------------------------------------
 -- Please reconstruct the SQL query Q2 such that EXPLAIN ANALYZE Q2
 -- leads to the following plan:

@@ -11,7 +11,7 @@
 -- NULL values, the use of FILTER clauses, and the ordering of results
 -- (i.e., ORDER BY within the aggregate function) .
 --------------------------------------------------------------------------------
--- Task (a)
+-- Task (a) — [E]
 --------------------------------------------------------------------------------
 -- Please define a table `t` that leads to the given result when you evaluate
 -- the aggregation query Q below.

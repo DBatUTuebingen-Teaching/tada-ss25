@@ -10,14 +10,14 @@
 -- Please hand-in the SQL code that you used to compute the statistics.
 -- Note: https://duckdb.org/docs/stable/sql/functions/aggregates.html
 --------------------------------------------------------------------------------
--- Task (a)
+-- Task (a) — [E]
 --------------------------------------------------------------------------------
 -- Please compute the total number of rows in the table `lineitem`.
 --------------------------------------------------------------------------------
 -- Solution:
 
 --------------------------------------------------------------------------------
--- Task (b)
+-- Task (b) — [E]
 --------------------------------------------------------------------------------
 -- Please compute the total number of rows in the table `lineitem` where
 -- `l_shipdate` is before '1995-06-17' and `l_returnflag` is neither 'A' nor 'R'.
@@ -25,7 +25,7 @@
 -- Solution:
 
 --------------------------------------------------------------------------------
--- Task (c)
+-- Task (c) — [E]
 --------------------------------------------------------------------------------
 -- Please compute the minimum, maximum, and average `l_quantity` of all rows in
 -- the table `lineitem`. Use a single SQL query to compute all three statistics.
@@ -33,7 +33,7 @@
 -- Solution:
 
 --------------------------------------------------------------------------------
--- Task (d)
+-- Task (d) — [E]
 --------------------------------------------------------------------------------
 -- Please formulate a single SQL query that outputs two double values
 -- (between 0.0 and 100.0):

@@ -12,21 +12,21 @@ FROM read_csv('StarWars-EpisodeIV.txt',
               names = ['id', 'character', 'dialogue'],
               delim = ' ');
 --------------------------------------------------------------------------------
--- Task (a)
+-- Task (a) — [E]
 --------------------------------------------------------------------------------
 -- Please load the file `StarWars-EpisodeIV.txt` into a DuckDB table using the `read_csv` function.
 --------------------------------------------------------------------------------
 -- Solution:
 
 --------------------------------------------------------------------------------
--- Task (b)
+-- Task (b) — [E]
 --------------------------------------------------------------------------------
 -- Please write a SQL query that returns only the last line of the script.
 --------------------------------------------------------------------------------
 -- Solution:
 
 --------------------------------------------------------------------------------
--- Task (c)
+-- Task (c) — [E]
 --------------------------------------------------------------------------------
 -- Please write a SQL that lists all characters who state that they have
 -- "... a very bad feeling about this ..."
@@ -34,7 +34,7 @@ FROM read_csv('StarWars-EpisodeIV.txt',
 -- Solution:
 
 --------------------------------------------------------------------------------
--- Task (d)
+-- Task (d) — [E]
 --------------------------------------------------------------------------------
 -- Please write a SQL query that returns the 10 longest lines of the script,
 -- and keep it in the same order as the original file.
@@ -43,7 +43,7 @@ FROM read_csv('StarWars-EpisodeIV.txt',
 -- Solution:
 
 --------------------------------------------------------------------------------
--- Task (e)
+-- Task (e) — [E]
 --------------------------------------------------------------------------------
 -- Please write a SQL query that returns the first 5 lines of the script
 -- where the dialogue contains the word "force" (case insensitive),
@@ -52,7 +52,7 @@ FROM read_csv('StarWars-EpisodeIV.txt',
 -- Solution:
 
 --------------------------------------------------------------------------------
--- Task (f)
+-- Task (f) — [E]
 --------------------------------------------------------------------------------
 -- Please write a SQL query that returns the dialogue lines where the character name
 -- is either "BEN" or "VADER" talking about the "force" (case insensitive),
