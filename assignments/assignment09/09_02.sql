@@ -1,0 +1,72 @@
+--------------------------------------------------------------------------------
+-- Tabular Database Systems
+-- Assignment 09
+-- Exercise 02
+--------------------------------------------------------------------------------
+-- In this exercise, we will work with the DuckDB database file `university.db`.
+-- The database contains the following tables:
+-- - `students`: Contains information about students (id, name, major, pursued_degree, age).
+-- - `staff`: Contains information about staff members (id, name, department_id, age).
+-- - `class`: Contains information about classes (id, name, meets_at, room, class_staff_id).
+-- - `enrolled`: Contains information about which students are enrolled in which classes (student_id, class_id).
+-- - `department`: Contains information about departments (id, name).
+--------------------------------------------------------------------------------
+-- Task (a) — [E]
+--------------------------------------------------------------------------------
+-- Please write a SQL query that returns the names of all students which names
+-- begin with "Mar", and pursue a degree in "Bachelor of Science" ('B.Sc.').
+--------------------------------------------------------------------------------
+-- Solution:
+
+--------------------------------------------------------------------------------
+-- Task (b) — [E]
+--------------------------------------------------------------------------------
+-- Please write a SQL query that returns the name of each class and the name of the
+-- staff member who teaches that class.
+--------------------------------------------------------------------------------
+-- Solution:
+
+--------------------------------------------------------------------------------
+-- Task (c) — [E]
+--------------------------------------------------------------------------------
+-- Please list all students enrolled in classes of the "Computer Science" department.
+-- The result should not contain duplicates. Do you need to use `DISTINCT`?
+-- Please explain briefly why or why not.
+--------------------------------------------------------------------------------
+-- Solution:
+
+--------------------------------------------------------------------------------
+-- Task (d) — [E]
+--------------------------------------------------------------------------------
+-- Please write a SQL query that finds the names of all students who are enrolled in classes
+-- that are taught by "Ivana Teach".
+--------------------------------------------------------------------------------
+-- Solution:
+
+--------------------------------------------------------------------------------
+-- Task (e) — [E]
+--------------------------------------------------------------------------------
+-- Please write a SQL query that returns the names of all staff members, who
+-- are at least twice as old as some student enrolled in one of their classes.
+--------------------------------------------------------------------------------
+-- Solution:
+
+--------------------------------------------------------------------------------
+-- Task (f) — [E]
+--------------------------------------------------------------------------------
+-- Please write a SQL query that returns classes that have both 'B.Sc.' and 'M.Sc.'
+-- students enrolled.
+--------------------------------------------------------------------------------
+-- Solution:
+
+--------------------------------------------------------------------------------
+-- Task (g)
+--------------------------------------------------------------------------------
+-- Please write a SQL query that for each class, lists the class name,
+-- the name of the staff member teaching that class, and the name of the department
+-- the staff member belongs to. Careful: The staff member may not belong to a department.
+-- Note: The solution requires a FULL OUTER JOIN.
+--------------------------------------------------------------------------------
+-- Solution:
+
+--------------------------------------------------------------------------------

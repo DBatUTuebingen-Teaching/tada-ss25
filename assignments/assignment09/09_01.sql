@@ -1,0 +1,60 @@
+--------------------------------------------------------------------------------
+-- Tabular Database Systems
+-- Assignment 09
+-- Exercise 01
+--------------------------------------------------------------------------------
+-- In this exercise, we will use more SQL features and train our skills in
+-- writing SQL queries.
+--------------------------------------------------------------------------------
+-- Task (a) — [E]
+--------------------------------------------------------------------------------
+-- This tasks and the following ones use the starwars database `starwars.db`.
+--
+-- John Williams is the musical mastermind behind most of the big-screen Star Wars movies
+-- (those listed in table films). But other composers had an impact, too (e.g., in TV shows).
+-- List the names of those composers whose music is not associated with any big-screen
+-- Star Wars movie.
+--------------------------------------------------------------------------------
+-- Solution:
+
+--------------------------------------------------------------------------------
+-- Task (b) — [E]
+--------------------------------------------------------------------------------
+-- One species is represented twice in table "species" with all columns
+-- containing identical data (except column "id").  Write a query
+-- that returns a single row containing the duplicate data of that species
+-- (excluding column "id").
+--------------------------------------------------------------------------------
+-- Solution:
+
+--------------------------------------------------------------------------------
+-- Task (c) — [E]
+--------------------------------------------------------------------------------
+-- Write a query that finds the name of two characters that died
+-- youngest and oldest (tag the rows to indicate who is who):
+--
+-- ┌──────────┬──────────┐
+-- │   name   │   age    │
+-- ├──────────┼──────────┤
+-- │ ‹name₁›  │ youngest │
+-- │ ‹name₂›  │ oldest   │
+-- └──────────┴──────────┘
+--------------------------------------------------------------------------------
+-- Solution:
+
+--------------------------------------------------------------------------------
+-- Task (d) — [E]
+--------------------------------------------------------------------------------
+-- Which films (title, year) make up the pequels (released after Return of the Jedi,
+-- before The Force Awakens)?
+--------------------------------------------------------------------------------
+-- Solution:
+
+--------------------------------------------------------------------------------
+-- Task (e) — Warning: this task is a bit tricky!
+--------------------------------------------------------------------------------
+-- Which droids (name) appear in all films directed by George Lucas?
+--------------------------------------------------------------------------------
+-- Solution:
+
+--------------------------------------------------------------------------------
