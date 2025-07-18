@@ -1,0 +1,6 @@
+Due to its size (~2.8 GB), we do not host the DuckDB file
+for the NYC Taxi dataabse (051-nyc-taxi.db) on GitHub.
+
+You can download the database file here:
+
+https://db.cs.uni-tuebingen.de/staticfiles/051-nyc-taxi.db
