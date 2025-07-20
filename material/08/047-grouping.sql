@@ -62,7 +62,7 @@ FROM   (SELECT v.seats < 5 AS "small vehicle?",
         FROM   vehicles AS v
         GROUP BY v.seats < 5);
 
--- ⚠️ This will fail (in SQL, grouping is mandatory):
+-- ⚠️ This will fail (in SQL, aggregation after grouping is mandatory):
 FROM   vehicles AS v
 GROUP BY v.seats < 5;
 

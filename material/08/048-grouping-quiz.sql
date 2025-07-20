@@ -82,7 +82,7 @@ SELECT v.pid AS driver,
        count(*) AS cardinality,
        string_agg(v.vehicle, ' ') AS vehicles
 FROM   vehicles AS  v
-GROUP BY v.pid, "small vehicle?"  -- ≡ GROUP BY "small vehicle?", v.pid
+GROUP BY v.pid, "small vehicle?";  -- ≡ GROUP BY "small vehicle?", v.pid
 
 -----------------------------------------------------------------------
 -- See Grouping Quiz (D)
@@ -92,15 +92,16 @@ GROUP BY v.pid, "small vehicle?"  -- ≡ GROUP BY "small vehicle?", v.pid
 --
 -- Original query (yields four groups):
 SELECT v.pid,
-       count(*) AS cardinality
+       count(*) AS cardinality,
 FROM   vehicles AS v
 GROUP BY v.pid;
 
 -- Add new grouping criterion exprⱼ ≡ v."wheels?": query still yields
--- four groups.  Indeed, v."wheels?" is constant within each group.
+-- four groups.  Indeed, v."wheels?" is constant within each group
+-- (add aggregate list(v."wheels?") to the query above to check).
 --
 -- Conclusion: the value of v.pid uniquely determines the value
--- of v."wheels"?
+-- of v."wheels?"
 SELECT v.pid,
        v."wheels?",
        count(*) AS cardinality

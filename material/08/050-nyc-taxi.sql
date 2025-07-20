@@ -140,7 +140,7 @@ ORDER BY "trip duration";
 
 
 -- Query 4:
--- How does the distance displayed on taxis meter deviate from the true
+-- How does the distance displayed on taxi meters deviate from the true
 -- Haversine geographic distance between pickup and dropoff location?
 -- (NB. Locations are only approximate: centroid of the spheres representing
 -- the NYC taxi zones, visualized at
@@ -167,7 +167,7 @@ distances(pickup, dropoff, taxi_meter, "as the crow flies", ratio) AS (
 -- FROM distances
 -- LIMIT 10;
 -- (2) Group distance deviations into five buckets
-SELECT b.bucket
+SELECT b.bucket,
        count(*) AS rides,
        bar(rides, 0, 25_000_000, 30) AS visualized
 FROM distances AS d,
